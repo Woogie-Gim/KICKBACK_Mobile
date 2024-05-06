@@ -1,0 +1,268 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Unity Project\\KICKBACK\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK\\assets\\scripts\\map\\finishlinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map\\finishlinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|d:\\unity project\\kickback\\assets\\scripts\\ui\\beforestarting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\beforestarting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK\\assets\\scripts\\level design\\boostpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\level design\\boostpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK\\assets\\scripts\\server\\resultmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\server\\resultmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK\\assets\\scripts\\kart\\camerafollowing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\kart\\camerafollowing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK\\assets\\scripts\\kart\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\kart\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|d:\\unity project\\kickback\\assets\\scripts\\map\\lapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map\\lapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK\\assets\\scripts\\ui\\countdowncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\countdowncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK\\assets\\scripts\\server\\tcpconnectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\server\\tcpconnectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK\\assets\\scripts\\kart\\boostercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\kart\\boostercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK\\assets\\scripts\\server\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\server\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK\\assets\\scripts\\server\\sessiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\server\\sessiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK\\assets\\scripts\\server\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\server\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK\\assets\\scripts\\signupbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\signupbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK\\assets\\scripts\\server\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4362A310-5385-3958-7A2A-60728596784B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\server\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BeforeStarting.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\UI\\BeforeStarting.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\BeforeStarting.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\UI\\BeforeStarting.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\BeforeStarting.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T20:29:51.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerScript.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Kart\\PlayerScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Kart\\PlayerScript.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Kart\\PlayerScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Kart\\PlayerScript.cs",
+              "ViewState": "AQIAAOMAAAAAAAAAAAAuwAEBAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T12:22:34.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CameraFollowing.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Kart\\CameraFollowing.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Kart\\CameraFollowing.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Kart\\CameraFollowing.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Kart\\CameraFollowing.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAIwEIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T13:58:10.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResultManager.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Server\\ResultManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Server\\ResultManager.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Server\\ResultManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Server\\ResultManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T12:18:32.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Boostpad.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Level Design\\Boostpad.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Level Design\\Boostpad.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Level Design\\Boostpad.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Level Design\\Boostpad.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvw8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T13:42:58.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FinishLineController.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Map\\FinishLineController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Map\\FinishLineController.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Map\\FinishLineController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Map\\FinishLineController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T20:27:49.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LapController.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Map\\LapController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Map\\LapController.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Map\\LapController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Map\\LapController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T21:34:20.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CountDownController.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\UI\\CountDownController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\CountDownController.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\UI\\CountDownController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\CountDownController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T12:38:22.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TCPConnectManager.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Server\\TCPConnectManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Server\\TCPConnectManager.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Server\\TCPConnectManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Server\\TCPConnectManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T12:46:24.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BoosterController.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Kart\\BoosterController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Kart\\BoosterController.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Kart\\BoosterController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Kart\\BoosterController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T16:10:09.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DataManager.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Server\\DataManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Server\\DataManager.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Server\\DataManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Server\\DataManager.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAawGEAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T12:46:24.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Server\\User.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Server\\User.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Server\\User.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Server\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T12:46:24.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SessionData.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Server\\SessionData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Server\\SessionData.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Server\\SessionData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Server\\SessionData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T12:46:24.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SignUpBtn.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\SignUpBtn.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SignUpBtn.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\SignUpBtn.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SignUpBtn.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T12:46:24.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ChatMessage.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Server\\ChatMessage.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Server\\ChatMessage.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK\\Assets\\Scripts\\Server\\ChatMessage.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Server\\ChatMessage.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwAcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T12:46:24.262Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
