@@ -1,0 +1,925 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.33f1 (ee5a2aa03ab2) revision 15620650'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'ko' Physical Memory: 32597 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.33f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+D:/Unity Project/KICKBACK_Mobile
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+12368
+Successfully changed project path to: D:/Unity Project/KICKBACK_Mobile
+D:/Unity Project/KICKBACK_Mobile
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [22620] Host "[IP] 192.168.55.164 [Port] 0 [Flags] 2 [Guid] 3081647735 [EditorId] 3081647735 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-G0Q175S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [22620] Host "[IP] 192.168.55.164 [Port] 0 [Flags] 2 [Guid] 3081647735 [EditorId] 3081647735 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-G0Q175S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
+Refreshing native plugins compatible for Editor in 172.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.33f1 (ee5a2aa03ab2)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity Project/KICKBACK_Mobile/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 (ID=0x2882)
+    Vendor:   NVIDIA
+    VRAM:     7971 MB
+    Driver:   31.0.15.3640
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008830 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Unauthorized device detected, Id: R5CR82CDRQL, please add debug authorization and reconnect.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+UnityEditor.Android.AndroidDeploymentTargetsExtension:GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,UnityEditor.ProgressHandler)
+UnityEditor.Android.TargetScanWorker:ScanSync ()
+UnityEditor.Android.TargetExtension:OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[])
+UnityEditor.Android.TargetExtension:OnLoad ()
+UnityEditor.Modules.ModuleManager:InitializePlatformSupportModules ()
+
+Android Extension - Scanning For ADB Devices 237 ms
+Refreshing native plugins compatible for Editor in 201.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.901 seconds
+Domain Reload Profiling:
+	ReloadAssembly (902ms)
+		BeginReloadAssembly (80ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (745ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (69ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (620ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (311ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (202ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (72ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002120 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 193.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.387 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1387ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (1205ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (188ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (885ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (194ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (559ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 2.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3771 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (315.6 KB). Loaded Objects now: 4278.
+Memory consumption went from 260.4 MB to 260.1 MB.
+Total: 1.994500 ms (FindLiveObjects: 0.171500 ms CreateObjectMapping: 0.079700 ms MarkObjects: 1.694600 ms  DeleteObjects: 0.048000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1474632.046621 seconds.
+  path: Assets/Store Assets/ARPG Effects/Textures/levelup_ring.png
+  artifactKey: Guid(51e8719fee4618b4b85feca7a170c466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/ARPG Effects/Textures/levelup_ring.png using Guid(51e8719fee4618b4b85feca7a170c466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f6acd8cfa21efb3c1367717957affb1') in 0.083928 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Store Assets/UniversalVehicleController/ART/Meshes/Vehicles/F_Truck.FBX
+  artifactKey: Guid(146eeee49ef176841b0b48cf01168770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/UniversalVehicleController/ART/Meshes/Vehicles/F_Truck.FBX using Guid(146eeee49ef176841b0b48cf01168770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e9d812d683303d73a8e174d09d008cb') in 0.851101 seconds 
+Number of asset objects unloaded after import = 488
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Explosion LoFi Power Up 01.wav
+  artifactKey: Guid(3d7ec0d7ce45c284e80b65da4522374d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Explosion LoFi Power Up 01.wav using Guid(3d7ec0d7ce45c284e80b65da4522374d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f7761ba61e4ba4416037e30edf9d8f1') in 0.055197 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Bounce Long 01.wav
+  artifactKey: Guid(e2f8954bd0adeea4e90d2adf1aeb0423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Bounce Long 01.wav using Guid(e2f8954bd0adeea4e90d2adf1aeb0423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4561c74eb65d0d3201ba04cef2e523d8') in 0.050085 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Climb Run Up Long 06.wav
+  artifactKey: Guid(3deb857113a9e40449b03a28ec1ef45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Climb Run Up Long 06.wav using Guid(3deb857113a9e40449b03a28ec1ef45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '538956143608e407c8aaff36c4715dae') in 0.027655 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Store Assets/GUIPackCartoon/Demo/Resources/UI Elements/Popup/Popup - Clouds.prefab
+  artifactKey: Guid(c51e93ca7c7504dba9adea8cd95a9ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/GUIPackCartoon/Demo/Resources/UI Elements/Popup/Popup - Clouds.prefab using Guid(c51e93ca7c7504dba9adea8cd95a9ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb83fdfc2d663702e3bd0f3bb2c9d59') in 0.012969 seconds 
+Number of asset objects unloaded after import = 56
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Store Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Drinks_M/coffee-cup.fbx
+  artifactKey: Guid(acdc8610020df5048a1f08dd64bc853e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Drinks_M/coffee-cup.fbx using Guid(acdc8610020df5048a1f08dd64bc853e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81f3c3ba9766b43126dea68fe4a1e474') in 0.014142 seconds 
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Store Assets/polyperfect/Low Poly Ultimate Pack/- Textures/atlas-gradient-LPUP.png
+  artifactKey: Guid(bd9d0343175ea445eae5d3ffa327072e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/polyperfect/Low Poly Ultimate Pack/- Textures/atlas-gradient-LPUP.png using Guid(bd9d0343175ea445eae5d3ffa327072e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dc846b7c14ba543f060008c34ec7aaf') in 0.035928 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Store Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Food_M/jar-syrup.fbx
+  artifactKey: Guid(ea892c609a1214f4c90958a923bd512c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Food_M/jar-syrup.fbx using Guid(ea892c609a1214f4c90958a923bd512c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '036fcd343177014786c9e4db9bc29545') in 0.010220 seconds 
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Store Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Food_T/jar-syrup.fbx
+  artifactKey: Guid(c30e7ad369f7aa344a360e9659affc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Food_T/jar-syrup.fbx using Guid(c30e7ad369f7aa344a360e9659affc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8652fffc7cf4e4214cade6f1a6e51e66') in 0.010228 seconds 
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Store Assets/polyperfect/Low Poly Ultimate Pack/- Textures/grass-texture-long-LPUP.png
+  artifactKey: Guid(f5ef23c6d74e24f178d1b69eb0a174fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/polyperfect/Low Poly Ultimate Pack/- Textures/grass-texture-long-LPUP.png using Guid(f5ef23c6d74e24f178d1b69eb0a174fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2f54ee3342f6b2c673b6879cb6c6caa') in 0.068761 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/MECHS - MACHINES - SERVOS - (103)/MECH Servo Motor Power Up Long 01.wav
+  artifactKey: Guid(929797025b61c834fbdb8bd42d3f7268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/MECHS - MACHINES - SERVOS - (103)/MECH Servo Motor Power Up Long 01.wav using Guid(929797025b61c834fbdb8bd42d3f7268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba60220e32c1140938a57bdd94492c2') in 0.088754 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Store Assets/Game Show Asset Pack/Models/MenuPlatform.fbx
+  artifactKey: Guid(a63b8637017cbd04b8b2920ff81c21f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/Game Show Asset Pack/Models/MenuPlatform.fbx using Guid(a63b8637017cbd04b8b2920ff81c21f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '763ced5e7342d4b724e8c0077410c302') in 0.221651 seconds 
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Short 06.wav
+  artifactKey: Guid(2d77e26c6ea31ef4d837576fb51d0a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Short 06.wav using Guid(2d77e26c6ea31ef4d837576fb51d0a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbee513db9b9616943c13dd7ae7d2bc8') in 0.044101 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Short 10.wav
+  artifactKey: Guid(58b39d458c071ef44ad21aa8b36b33e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Short 10.wav using Guid(58b39d458c071ef44ad21aa8b36b33e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4f2f9ccf9bf45a29f86893562dadf18') in 0.125384 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Short 15.wav
+  artifactKey: Guid(cedf20a1f74326248b5aeea902dc432d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Short 15.wav using Guid(cedf20a1f74326248b5aeea902dc432d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e20732d5c32e9d8ac42f82ad3c89333') in 0.095679 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Bounce Short 07.wav
+  artifactKey: Guid(6305486b36fa5ff4c9d8e8bf5feedcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Bounce Short 07.wav using Guid(6305486b36fa5ff4c9d8e8bf5feedcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af8a7d2b9bc0c2e0e7d036c480ecfb61') in 0.050071 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Bounce Long 06.wav
+  artifactKey: Guid(2836b131bdd69af4e82d8be11077cf61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Bounce Long 06.wav using Guid(2836b131bdd69af4e82d8be11077cf61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff06104a7d62bf16e78a7f431987b241') in 0.038060 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Bounce Long 07.wav
+  artifactKey: Guid(efa5ad1cee8f16b43ad4a1b4df3cf81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Bounce Long 07.wav using Guid(efa5ad1cee8f16b43ad4a1b4df3cf81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcddcfad4884bcbb1ce46bbe13f676bb') in 0.074149 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Store Assets/UniversalVehicleController/ART/Prefabs/Environment/PrototypeProps/PrototypeRoads/Road_Line_40_WithupBorders.prefab
+  artifactKey: Guid(228e762f9f9fe8f4c838dba4ef357b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/UniversalVehicleController/ART/Prefabs/Environment/PrototypeProps/PrototypeRoads/Road_Line_40_WithupBorders.prefab using Guid(228e762f9f9fe8f4c838dba4ef357b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94885bb152519b4f0db7a438dd2c7c19') in 0.230342 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/UI/Sign Up.prefab
+  artifactKey: Guid(80e0ff3b091fd00408026498674c05a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Resources/UI/Sign Up.prefab using Guid(80e0ff3b091fd00408026498674c05a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95232f5923ffa57dd4f63c41cdc56137') in 0.138866 seconds 
+Number of asset objects unloaded after import = 213
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep 08.wav
+  artifactKey: Guid(a76fbc4425f0cf84b9362da610063a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep 08.wav using Guid(a76fbc4425f0cf84b9362da610063a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76bdc7df742b6a3ea66c01da3abb5fbe') in 0.066791 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep 10.wav
+  artifactKey: Guid(2a08ddceb938cf24b80ad77bc66c9817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep 10.wav using Guid(2a08ddceb938cf24b80ad77bc66c9817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '400648e268965bdb111751e60b455b43') in 0.119110 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep Short 01.wav
+  artifactKey: Guid(308dd7c3f88024d479965bed737f76b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep Short 01.wav using Guid(308dd7c3f88024d479965bed737f76b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9361ce806ffb728509329711de5b625') in 0.065247 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Store Assets/UniversalVehicleController/ART/Prefabs/Environment/PrototypeProps/PrototypeRoads/Road_Turn_180_Uphill_WithTwist_45.prefab
+  artifactKey: Guid(2a76bb1855844f64b872b89303f03871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/UniversalVehicleController/ART/Prefabs/Environment/PrototypeProps/PrototypeRoads/Road_Turn_180_Uphill_WithTwist_45.prefab using Guid(2a76bb1855844f64b872b89303f03871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2f3b5e460ffb32c1ae0c14e0fb32c60') in 0.001889 seconds 
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Store Assets/UniversalVehicleController/ART/Sprites/UI/S_ButtonArrowUpSprite.png
+  artifactKey: Guid(aea00a1a5e1714b47af5050a05238221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/UniversalVehicleController/ART/Sprites/UI/S_ButtonArrowUpSprite.png using Guid(aea00a1a5e1714b47af5050a05238221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca6714bdd13d5c29207de30117136c1b') in 0.114599 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep Short 04.wav
+  artifactKey: Guid(ef4620476d6b6c0448eff37d8ee82ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep Short 04.wav using Guid(ef4620476d6b6c0448eff37d8ee82ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c45ec34017286917311a19da1ee472') in 0.069687 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Impact Hit 04.wav
+  artifactKey: Guid(662651450298fbb4d955dbaf7711f473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Impact Hit 04.wav using Guid(662651450298fbb4d955dbaf7711f473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de04ae4b08f31e82f28f68e0ba4dec1e') in 0.037082 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Impact Hit 05.wav
+  artifactKey: Guid(7ee470017bfa8e444ab322ff837ba684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Impact Hit 05.wav using Guid(7ee470017bfa8e444ab322ff837ba684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd086e6f71695a0e85556befa2419bdd5') in 0.079881 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep Short 03.wav
+  artifactKey: Guid(2ad4c86c5f928344c944d0f6700ac458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep Short 03.wav using Guid(2ad4c86c5f928344c944d0f6700ac458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e9922c9b837970a15cf5811d6f75dbc') in 0.011538 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Impact Hit 15.wav
+  artifactKey: Guid(9725ac6d741d6f144baa02d9bfcc170e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Impact Hit 15.wav using Guid(9725ac6d741d6f144baa02d9bfcc170e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b55ae807dc630735c25e6fe16e6e4e') in 0.004778 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps 01.wav
+  artifactKey: Guid(3513dd3ecf12b474da2ffcd34fa2cea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps 01.wav using Guid(3513dd3ecf12b474da2ffcd34fa2cea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd50d93f5fe78acba2b35296bddb8d0be') in 0.026799 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Buildup 06.wav
+  artifactKey: Guid(8c10032984b66db478e3acf381cce436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Buildup 06.wav using Guid(8c10032984b66db478e3acf381cce436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eede55e3b3a193b5439a51bdb3ea8694') in 0.060042 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 01.wav
+  artifactKey: Guid(12a1bbc9d8894e542a9049e3611d0bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 01.wav using Guid(12a1bbc9d8894e542a9049e3611d0bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1bb1f8fde034754feefa7fb6d47bb61') in 0.056049 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 09.wav
+  artifactKey: Guid(c75ddb135693c30428f53743ce04062f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 09.wav using Guid(c75ddb135693c30428f53743ce04062f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7efd510b7457849b1f5fa45829b9f8c0') in 0.021505 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 04.wav
+  artifactKey: Guid(df2c4a49eb6385c41b53391abd57bf3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 04.wav using Guid(df2c4a49eb6385c41b53391abd57bf3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dbecff46d692979c1a3e04897e256fd') in 0.022360 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up 02.wav
+  artifactKey: Guid(e44d7587fde398c46a48cd74ae883d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up 02.wav using Guid(e44d7587fde398c46a48cd74ae883d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c732ee6f65f13e6b41421c1e321cc341') in 0.040190 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up Short 04.wav
+  artifactKey: Guid(84bf5d6607571894e8d1ce675899acd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up Short 04.wav using Guid(84bf5d6607571894e8d1ce675899acd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec0dcc34a0d54794954722ac38ac93af') in 0.050758 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Uphill Track.prefab
+  artifactKey: Guid(b36237a1de651d1499d78782801236c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Resources/Uphill Track.prefab using Guid(b36237a1de651d1499d78782801236c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '069d375b9c8c64e5414a4c4b0cb419b1') in 1.911697 seconds 
+Number of asset objects unloaded after import = 4051
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 12.wav
+  artifactKey: Guid(658b8e4f4d0701c4bbca587bae130904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 12.wav using Guid(658b8e4f4d0701c4bbca587bae130904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b82f9611b687a5685f6ba631a14698') in 0.068713 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Short 12.wav
+  artifactKey: Guid(a66337bc58e98f14ca3803f842a5f744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Short 12.wav using Guid(a66337bc58e98f14ca3803f842a5f744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f882610de6c7359ab952a0041f81da20') in 0.031751 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 08.wav
+  artifactKey: Guid(0e28e4f06c1766445b4f87931492f680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 08.wav using Guid(0e28e4f06c1766445b4f87931492f680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b7f2e38cd170ec13d447194810c002d') in 0.095178 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps 02.wav
+  artifactKey: Guid(b224d9768a3819e439c617b188182658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps 02.wav using Guid(b224d9768a3819e439c617b188182658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e830f659636550a8517c03b48f186860') in 0.118934 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up Short 07.wav
+  artifactKey: Guid(a6ce3069331e05642b59e5b7469070f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up Short 07.wav using Guid(a6ce3069331e05642b59e5b7469070f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44c1659cc7d12d30fbf663abde235467') in 0.077831 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/VOCAL CUTE - CHARACTERS - (113)/VOCAL CUTE Call Cheer Group 06.wav
+  artifactKey: Guid(9fea63e41ed116248be0faa7724ee58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/VOCAL CUTE - CHARACTERS - (113)/VOCAL CUTE Call Cheer Group 06.wav using Guid(9fea63e41ed116248be0faa7724ee58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02fa208ae5e6d6e54210fd78e33023f4') in 0.192961 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep 14.wav
+  artifactKey: Guid(0ee3717d8b95b5b40bf9f129a6f9033f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep 14.wav using Guid(0ee3717d8b95b5b40bf9f129a6f9033f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c98b0998a8bba07fcbe5c9b494a030e') in 0.099238 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps 13.wav
+  artifactKey: Guid(5b3b335b1ed0a6a4f894999c82849198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps 13.wav using Guid(5b3b335b1ed0a6a4f894999c82849198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c184f4922a58fa30b2d098717035b0') in 0.014878 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep 06.wav
+  artifactKey: Guid(4da878d02c177b54ba9a1949caaf09b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep 06.wav using Guid(4da878d02c177b54ba9a1949caaf09b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af96c1141f432d1cf6632a28455cee78') in 0.038907 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up 03.wav
+  artifactKey: Guid(d42ba53a062dd8c42a021cbbf32ff80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up 03.wav using Guid(d42ba53a062dd8c42a021cbbf32ff80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62cc8439c4685bd13bde124a0144ee59') in 0.046308 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Bounce Short 01.wav
+  artifactKey: Guid(6de4bf93b9f461b4aa6d2a2e08ca834f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Bounce Short 01.wav using Guid(6de4bf93b9f461b4aa6d2a2e08ca834f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1299c051405b3d0b0fd14f11ae1331d6') in 0.127165 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up 08.wav
+  artifactKey: Guid(a641619e6d052824bba695f8d300b909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up 08.wav using Guid(a641619e6d052824bba695f8d300b909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79f3125db025d04a5dfa06925e02e171') in 0.062623 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps 07.wav
+  artifactKey: Guid(c33cfa81a584ada4bab2bd40357ae369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps 07.wav using Guid(c33cfa81a584ada4bab2bd40357ae369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957f052c6a425f2006fac1aa2c4e48a9') in 0.028396 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Store Assets/Kart Tutorial/ExampleAssets/Models/Workbench_Low.fbx
+  artifactKey: Guid(ff6dc36862fe41641bb21568d92147c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/Kart Tutorial/ExampleAssets/Models/Workbench_Low.fbx using Guid(ff6dc36862fe41641bb21568d92147c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '057f27b87741603cf6abdb5a62ea5f46') in 0.098646 seconds 
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 11.wav
+  artifactKey: Guid(0b14fd334b2fad74b87d87892f0321aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 11.wav using Guid(0b14fd334b2fad74b87d87892f0321aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '975f729739d2764878de3d613b98fad9') in 0.134793 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up Short 08.wav
+  artifactKey: Guid(2339105bb932750489073e0b8e92fc17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up Short 08.wav using Guid(2339105bb932750489073e0b8e92fc17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567c6d150ad14075eea17d7bae144952') in 0.033976 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/WATER - BUBBLES - SPLASHES - (16)/WATER Bubbles Up 01.wav
+  artifactKey: Guid(95f3d5709ced1bd4295081154c6a5051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/WATER - BUBBLES - SPLASHES - (16)/WATER Bubbles Up 01.wav using Guid(95f3d5709ced1bd4295081154c6a5051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '911e2942d2a4417db46a473679469510') in 0.109911 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up Long 07.wav
+  artifactKey: Guid(5d54469c9b7dcc0428d537ff84fe6192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up Long 07.wav using Guid(5d54469c9b7dcc0428d537ff84fe6192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1aceafcfc481d0eae6db23ae207ecc0') in 0.088073 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Chime 01.wav
+  artifactKey: Guid(f8fe658e1e4c3004694fac2a1d44c50f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Chime 01.wav using Guid(f8fe658e1e4c3004694fac2a1d44c50f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7a99a4aaf5bd2205bc29510b7b9257') in 0.063800 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up Short 01.wav
+  artifactKey: Guid(0dddbeffb9044f1468afd36df8cfe2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up Short 01.wav using Guid(0dddbeffb9044f1468afd36df8cfe2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f7f0f6fa9122ef11cc0c818ac2a7c2c') in 0.124687 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Chime 03.wav
+  artifactKey: Guid(a8ab978d1b7854f4784c80c7984b1894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Chime 03.wav using Guid(a8ab978d1b7854f4784c80c7984b1894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed2b6e117def3b6eb19f7eb58105b3fe') in 0.049549 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Impact Hit 06.wav
+  artifactKey: Guid(c52354719778246408c93463e4101603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Impact Hit 06.wav using Guid(c52354719778246408c93463e4101603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1578a85df0e6be8b8f87bc2b2370b023') in 0.077333 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps 04.wav
+  artifactKey: Guid(12823aab8ebab95498ab0d04f8e43fa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps 04.wav using Guid(12823aab8ebab95498ab0d04f8e43fa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9cc3f2e099a85c49794f11f37dd9dd4') in 0.078582 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Beep Ascender 01.wav
+  artifactKey: Guid(b8a4faf6def25ba40893c5064344563b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Beep Ascender 01.wav using Guid(b8a4faf6def25ba40893c5064344563b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaa07bbbddc186cdfc076aa687b224a4') in 0.050257 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Short 04.wav
+  artifactKey: Guid(61bf951f2cfead14e9166d4bc12cd6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Short 04.wav using Guid(61bf951f2cfead14e9166d4bc12cd6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4594a0a4116acc9457f5ceab809dd2fe') in 0.178078 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Short 14.wav
+  artifactKey: Guid(28b903abd7733914fbdd9f3d39d83ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/RETRO - ARCADE - (203)/RETRO Jump Up Short 14.wav using Guid(28b903abd7733914fbdd9f3d39d83ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a1940b7dd96053538c7040cb3f6274') in 0.030270 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep Short 11.wav
+  artifactKey: Guid(7efd664f1fffacb479f18b144c0a1e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep Short 11.wav using Guid(7efd664f1fffacb479f18b144c0a1e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffd950924e0f965f3eb3630dd2e8e55e') in 0.032436 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up Long 06.wav
+  artifactKey: Guid(230136a9f0cb5494181b5545a532ff9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up Long 06.wav using Guid(230136a9f0cb5494181b5545a532ff9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8175bb6e2d356469ab7f6e374bbd02') in 0.074836 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep Short 05.wav
+  artifactKey: Guid(16c3c05b7bdbe684c97a291e8be14ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Collect Beep Short 05.wav using Guid(16c3c05b7bdbe684c97a291e8be14ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc65cbbdb9b1c15b616b17f4e5fcbf71') in 0.061129 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/VOCAL CUTE - CHARACTERS - (113)/VOCAL CUTE Call Cheer Group 03.wav
+  artifactKey: Guid(415c826e9c70ad2459fc53997d6890a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/VOCAL CUTE - CHARACTERS - (113)/VOCAL CUTE Call Cheer Group 03.wav using Guid(415c826e9c70ad2459fc53997d6890a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762898bffb09bf6d214840c59180b326') in 0.061742 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 07.wav
+  artifactKey: Guid(6dfc91bd5dfb81a488ac7c3a0cca8d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 07.wav using Guid(6dfc91bd5dfb81a488ac7c3a0cca8d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e69966554c5aea5fa4d77eed4c6bbb62') in 0.046753 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 02.wav
+  artifactKey: Guid(b431bfb3339b28944857e7ff4ed3dfb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 02.wav using Guid(b431bfb3339b28944857e7ff4ed3dfb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8400aa950cf285e3c4a282cab6bb540c') in 0.088931 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up 01.wav
+  artifactKey: Guid(4c85be53535a9ab40a76ea052ee46cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/TECH CHARGERS - (45)/TECH CHARGER Power Up 01.wav using Guid(4c85be53535a9ab40a76ea052ee46cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da96ad1783bcb91410031dabe250c579') in 0.040250 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beep Clean 02.wav
+  artifactKey: Guid(fd74d047ea344d2438c65728b441dabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beep Clean 02.wav using Guid(fd74d047ea344d2438c65728b441dabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb333ded0e97279fb8576f586bcdd129') in 0.052144 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps 05.wav
+  artifactKey: Guid(018f77f2e7d214f4d904595fd2379a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps 05.wav using Guid(018f77f2e7d214f4d904595fd2379a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46ebdd46924515f20149534fc9e54372') in 0.105168 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 10.wav
+  artifactKey: Guid(69ac4e4541f96a9459e1f5126e7a6535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Store Assets/2000 Game Sound FX/SUCCESS - PICKUPS - (109)/SUCCESS PICKUP Retro Collect Beeps Multi 10.wav using Guid(69ac4e4541f96a9459e1f5126e7a6535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc1e74bd33e3faf83abd1b932fa8823') in 0.032311 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002052 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.168 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1169ms)
+		BeginReloadAssembly (178ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (916ms)
+			LoadAssemblies (135ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (180ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (612ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (32ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (474ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3737 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (314.9 KB). Loaded Objects now: 4332.
+Memory consumption went from 268.9 MB to 268.6 MB.
+Total: 2.904700 ms (FindLiveObjects: 0.242900 ms CreateObjectMapping: 0.132900 ms MarkObjects: 2.458900 ms  DeleteObjects: 0.068700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002045 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.090 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1090ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (887ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (173ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (600ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (45ms)
+				ProcessInitializeOnLoadAttributes (480ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3737 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (314.9 KB). Loaded Objects now: 4335.
+Memory consumption went from 268.9 MB to 268.6 MB.
+Total: 3.024100 ms (FindLiveObjects: 0.452800 ms CreateObjectMapping: 0.156000 ms MarkObjects: 2.363600 ms  DeleteObjects: 0.050200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (315.0 KB). Loaded Objects now: 4335.
+Memory consumption went from 194.5 MB to 194.2 MB.
+Total: 3.576900 ms (FindLiveObjects: 0.261700 ms CreateObjectMapping: 0.185900 ms MarkObjects: 3.053200 ms  DeleteObjects: 0.074900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

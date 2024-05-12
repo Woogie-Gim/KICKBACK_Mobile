@@ -11,7 +11,7 @@ public class ResultManager : MonoBehaviour
     
     private IEnumerator LapTimeUpdate()
     {
-        string url = "http://192.168.100.158:8080"; // 요청 URL
+        string url = "https://k10c209.p.ssafy.io"; // 요청 URL
         string requestUrl = url + "/api/v1/record/updateSpeedRecord2";
 
         string jsonRequestBody = "";

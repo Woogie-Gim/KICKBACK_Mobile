@@ -32,7 +32,7 @@ public class LoginManager : MonoBehaviour
     [SerializeField] private Button SignUpConfirmBtn; // 회원 가입 하기 버튼
     [SerializeField] private Button SignUpCancelBtn; // 회원가입 종료 버튼
 
-    private string url = "http://192.168.100.158:8080/api/v1"; // 요청 URL
+    private string url = "https://k10c209.p.ssafy.io/api/v1"; // 요청 URL
 
     // 만약 로그인 한 상태에서 로그인 매니저 켜질 시 로그인 필요 없으니 로비로 바로 이동
     private void OnEnable()

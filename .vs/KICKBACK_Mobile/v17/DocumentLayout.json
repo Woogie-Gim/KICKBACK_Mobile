@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{AE6CB410-52D4-ACD0-080F-436258A99A3E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\kart\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE6CB410-52D4-ACD0-080F-436258A99A3E}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK_Mobile\\assets\\scripts\\map\\lapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE6CB410-52D4-ACD0-080F-436258A99A3E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map\\lapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE6CB410-52D4-ACD0-080F-436258A99A3E}|Assembly-CSharp.csproj|d:\\unity project\\kickback_mobile\\assets\\scripts\\server\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE6CB410-52D4-ACD0-080F-436258A99A3E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\server\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CB410-52D4-ACD0-080F-436258A99A3E}|Assembly-CSharp.csproj|d:\\unity project\\kickback_mobile\\assets\\scripts\\server\\resultmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE6CB410-52D4-ACD0-080F-436258A99A3E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\server\\resultmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CB410-52D4-ACD0-080F-436258A99A3E}|Assembly-CSharp.csproj|d:\\unity project\\kickback_mobile\\assets\\scripts\\server\\tcpconnectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE6CB410-52D4-ACD0-080F-436258A99A3E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\server\\tcpconnectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE6CB410-52D4-ACD0-080F-436258A99A3E}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK_Mobile\\assets\\scripts\\level design\\boostpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +25,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{AE6CB410-52D4-ACD0-080F-436258A99A3E}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK_Mobile\\assets\\scripts\\kart\\boostercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE6CB410-52D4-ACD0-080F-436258A99A3E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\kart\\boostercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CB410-52D4-ACD0-080F-436258A99A3E}|Assembly-CSharp.csproj|D:\\Unity Project\\KICKBACK_Mobile\\assets\\scripts\\map\\lapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE6CB410-52D4-ACD0-080F-436258A99A3E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map\\lapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +38,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResultManager.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK_Mobile\\Assets\\Scripts\\Server\\ResultManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Server\\ResultManager.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK_Mobile\\Assets\\Scripts\\Server\\ResultManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Server\\ResultManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvw0AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T13:44:56.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LoginManager.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK_Mobile\\Assets\\Scripts\\Server\\LoginManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Server\\LoginManager.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK_Mobile\\Assets\\Scripts\\Server\\LoginManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Server\\LoginManager.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAADwvyIAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T13:44:54.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TCPConnectManager.cs",
+              "DocumentMoniker": "D:\\Unity Project\\KICKBACK_Mobile\\Assets\\Scripts\\Server\\TCPConnectManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Server\\TCPConnectManager.cs",
+              "ToolTip": "D:\\Unity Project\\KICKBACK_Mobile\\Assets\\Scripts\\Server\\TCPConnectManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Server\\TCPConnectManager.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T13:43:26.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "LapController.cs",
               "DocumentMoniker": "D:\\Unity Project\\KICKBACK_Mobile\\Assets\\Scripts\\Map\\LapController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Map\\LapController.cs",
@@ -43,13 +94,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Boostpad.cs",
               "DocumentMoniker": "D:\\Unity Project\\KICKBACK_Mobile\\Assets\\Scripts\\Level Design\\Boostpad.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Level Design\\Boostpad.cs",
               "ToolTip": "D:\\Unity Project\\KICKBACK_Mobile\\Assets\\Scripts\\Level Design\\Boostpad.cs",
               "RelativeToolTip": "Assets\\Scripts\\Level Design\\Boostpad.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwQAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T05:28:53.818Z",
               "EditorCaption": ""
@@ -62,14 +113,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Kart\\PlayerScript.cs",
               "ToolTip": "D:\\Unity Project\\KICKBACK_Mobile\\Assets\\Scripts\\Kart\\PlayerScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\Kart\\PlayerScript.cs",
-              "ViewState": "AQIAAMABAAAAAAAAAAAAwMwBAAAFAAAA",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAAAIQAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T05:20:49.588Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "BoosterController.cs",
               "DocumentMoniker": "D:\\Unity Project\\KICKBACK_Mobile\\Assets\\Scripts\\Kart\\BoosterController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Kart\\BoosterController.cs",

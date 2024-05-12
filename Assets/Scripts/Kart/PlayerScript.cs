@@ -232,9 +232,13 @@ public class PlayerScript : MonoBehaviour
 
     private IEnumerator BoostRoutine()
     {
-        // Boost 시작
         isBoosting = true;
         currentBoost--;
+
+        // 공중에 떠있는지 여부를 확인
+        bool isInAir = !Physics.Raycast(transform.position, -transform.up, 1.5f, roadLayerMask);
+        float currentBoostDuration = isInAir ? 0.3f : boostDuration; // 공중에 떠있으면 1초, 아니면 기본 부스터 시간 사용
+
         BoostEffect(true);
 
         boostingAudioSource.clip = audioClips[1]; // 배열 2번 클립 (부스터 소리)
@@ -242,9 +246,8 @@ public class PlayerScript : MonoBehaviour
         boostWindAudioSource.clip = audioClips[2];
         boostWindAudioSource.Play();
 
-
-        // Boost 유지 시간
-        yield return new WaitForSeconds(boostDuration);
+        // 현재 부스터 유지 시간 대기
+        yield return new WaitForSeconds(currentBoostDuration);
 
         // Boost 종료
         isBoosting = false;
@@ -253,19 +256,22 @@ public class PlayerScript : MonoBehaviour
 
     public IEnumerator BoostPadRoutine()
     {
-        // Boost 시작
         isBoosting = true;
+        currentBoost--;
+
+        // 공중에 떠있는지 여부를 확인
+        bool isInAir = !Physics.Raycast(transform.position, -transform.up, 1.5f, roadLayerMask);
+        float currentBoostDuration = isInAir ? 0.3f : boostDuration; // 공중에 떠있으면 1초, 아니면 기본 부스터 시간 사용
+
         BoostEffect(true);
 
-        // 오디오 클립을 매번 설정하고 재생하도록 변경
         boostingAudioSource.clip = audioClips[1]; // 배열 2번 클립 (부스터 소리)
         boostingAudioSource.Play(); // 오디오 클립 재생 시작
-
         boostWindAudioSource.clip = audioClips[2];
         boostWindAudioSource.Play();
 
-        // Boost 유지 시간
-        yield return new WaitForSeconds(boostDuration);
+        // 현재 부스터 유지 시간 대기
+        yield return new WaitForSeconds(currentBoostDuration);
 
         // Boost 종료
         isBoosting = false;
@@ -298,11 +304,13 @@ public class PlayerScript : MonoBehaviour
 
     private void Steer()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
+        // 자이로스코프의 y축 회전값을 사용하여 horizontalInput 계산
+        float horizontalInput = Input.gyro.rotationRateUnbiased.y;
+
         // 현재 속도를 기반으로 한 회전 속도 조절
         float speedFactor = rb.velocity.magnitude / maxSpeed;
         speedFactor = Mathf.Pow(speedFactor, 2);
-        float rotateAmount = horizontalInput * rotateSpeed * Mathf.Max(speedFactor, 1) * Time.deltaTime;
+        float rotateAmount = horizontalInput * rotateSpeed * 2 * Mathf.Max(speedFactor, 1) * Time.deltaTime;
 
         if (Mathf.Abs(horizontalInput) > 0)
         {
@@ -326,51 +334,55 @@ public class PlayerScript : MonoBehaviour
 
     public void Drift()
     {
-        // 오디오 재생
-        if (!driftAudioSource.isPlaying)
+        if (IsGrounded())
         {
-            driftAudioSource.clip = audioClips[3]; // 부스터 소리 클립
-            driftAudioSource.Play();
-        }
-
-        // 이펙트 활성화
-        LeftSkid.emitting = true;
-        RightSkid.emitting = true;
-
-        float driftDirection = Input.GetAxis("Horizontal") > 0 ? 1f : -1f;
-        float verticalInput = Input.GetAxis("Vertical");
-
-        if (Mathf.Abs(driftDirection) > 0.1f)
-        {
-            // 드리프트 중 회전속도 증가
-            currentRotationSpeed = Mathf.Lerp(currentRotationSpeed, originalRotateSpeed * 5f, Time.deltaTime * 2);
-
-            // 미끄러짐 효과 추가
-            Vector3 driftForce = transform.right * driftDirection * driftPower;
-            rb.AddForce(driftForce, ForceMode.Force);
-            FillDriftGauge();
-        }
-        else
-        {
-            // 오디오 정지
-            if (driftAudioSource.isPlaying)
+            // 오디오 재생
+            if (!driftAudioSource.isPlaying)
             {
-                driftAudioSource.Stop();
+                driftAudioSource.clip = audioClips[3]; // 부스터 소리 클립
+                driftAudioSource.Play();
             }
 
-            // 이펙트 비활성화
-            LeftSkid.emitting = false;
-            RightSkid.emitting = false;
+            // 이펙트 활성화
+            LeftSkid.emitting = true;
+            RightSkid.emitting = true;
 
-            // 드리프트가 끝나면 회전속도 점차 복원
-            currentRotationSpeed = Mathf.Lerp(currentRotationSpeed, originalRotateSpeed, Time.deltaTime * 20);
+            float driftDirection = Input.GetAxis("Horizontal") > 0 ? 1f : -1f;
+            float verticalInput = Input.GetAxis("Vertical");
+
+            if (Mathf.Abs(driftDirection) > 0.1f)
+            {
+                // 드리프트 중 회전속도 증가
+                currentRotationSpeed = Mathf.Lerp(currentRotationSpeed, originalRotateSpeed * 5f, Time.deltaTime * 2);
+
+                // 미끄러짐 효과 추가
+                Vector3 driftForce = transform.right * driftDirection * driftPower;
+                rb.AddForce(driftForce, ForceMode.Force);
+                FillDriftGauge();
+            }
+            else
+            {
+                // 오디오 정지
+                if (driftAudioSource.isPlaying)
+                {
+                    driftAudioSource.Stop();
+                }
+
+                // 이펙트 비활성화
+                LeftSkid.emitting = false;
+                RightSkid.emitting = false;
+
+                // 드리프트가 끝나면 회전속도 점차 복원
+                currentRotationSpeed = Mathf.Lerp(currentRotationSpeed, originalRotateSpeed, Time.deltaTime * 20);
+            }
+
+            // 회전속도 업데이트
+            rotateSpeed = currentRotationSpeed;
+
+            // 드리프트 중 속도 조절
+            rb.velocity *= Mathf.Lerp(0.9f, 0.7f, rb.velocity.magnitude / maxSpeed);
         }
-
-        // 회전속도 업데이트
-        rotateSpeed = currentRotationSpeed;
-
-        // 드리프트 중 속도 조절
-        rb.velocity *= Mathf.Lerp(0.9f, 0.7f, rb.velocity.magnitude / maxSpeed);
+       
     }
 
     private void FillDriftGauge()

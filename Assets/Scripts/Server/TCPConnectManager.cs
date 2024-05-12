@@ -26,7 +26,7 @@ public class TCPConnectManager : MonoBehaviour
     private User loginUserInfo;
 
     // 호스트
-    private string hostname = "172.20.10.11"; // 로컬 호스트
+    private string hostname = "k10c209.p.ssafy.io"; // 로컬 호스트
     private int port = 1370;
 
     private void Awake()
