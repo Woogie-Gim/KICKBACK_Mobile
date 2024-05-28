@@ -11,6 +11,7 @@ public class PlayerScript : MonoBehaviour
     [Header("Scripts")]
     [SerializeField] private LapController controller;
     [SerializeField] private CameraFollowing cameraFollowing;
+    [SerializeField] private VirtualJoyStick joystick;
 
     [Header("Movement")]
     [SerializeField] private float maxSpeed = 30f; // 최대 속도
@@ -19,6 +20,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private float decelerationForce = 5f; // 감속력
     [SerializeField] private float reverseForceMultiplier = 0.1f; // 후진 힘 배수
     public LayerMask roadLayerMask; // Road LayerMask 설정
+    private bool isMovingForward = false;
     private bool isMovingBack = false;
 
     [Header("Jump")]
@@ -87,10 +89,6 @@ public class PlayerScript : MonoBehaviour
     {
         if (!controller.isFinish && !cameraFollowing.isStarting)
         {
-            MoveForwardAutomatically();
-            Steer();
-            Pause();
-
             if (isDrifting)
             {
                 Drift(); // 드리프트 시작
@@ -112,6 +110,12 @@ public class PlayerScript : MonoBehaviour
             }
         }
 
+        if (isJumping && rb.velocity.y < 0)
+        {
+            animator.SetBool("Jump", false);
+            isJumping = false; // 점프 상태 종료
+        }
+
 
         else if (controller.isFinish)
         {
@@ -119,28 +123,17 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    private void MoveForwardAutomatically()
+    public void Move(float verticalInput)
     {
-        // 자동으로 앞으로 이동하도록 verticalInput을 1로 설정합니다.
-        float verticalInput = 1.0f;
-
-        // 뒤로 가는 기능을 활성화했을 경우 verticalInput을 -1로 조정합니다.
-        if (isMovingBack)
+        if (verticalInput > 0)
+        {
+            verticalInput = 1.0f;
+        }
+        else if (verticalInput < 0)
         {
             verticalInput = -1.0f;
         }
 
-        ApplyMovement(verticalInput);
-    }
-
-    public void ToggleBack()
-    {
-        // 뒤로 가는 상태를 토글합니다.
-        isMovingBack = !isMovingBack;
-    }
-
-    private void ApplyMovement(float verticalInput)
-    {
         bool isOnRoad = Physics.Raycast(transform.position, -transform.up, 1f, roadLayerMask);
         float speedMultiplier = isOnRoad ? 1.0f : 0.7f;
 
@@ -171,7 +164,8 @@ public class PlayerScript : MonoBehaviour
 
             if (Mathf.Approximately(verticalInput, 0) && rb.velocity.magnitude > 0.1f)
             {
-                rb.AddForce(-rb.velocity.normalized * decelerationForce, ForceMode.Force);
+                Vector3 deceleration = -rb.velocity.normalized * decelerationForce * Time.deltaTime;
+                rb.AddForce(deceleration, ForceMode.VelocityChange);
             }
             else
             {
@@ -256,22 +250,19 @@ public class PlayerScript : MonoBehaviour
 
     public IEnumerator BoostPadRoutine()
     {
+        // Boost 시작
         isBoosting = true;
-        currentBoost--;
-
-        // 공중에 떠있는지 여부를 확인
-        bool isInAir = !Physics.Raycast(transform.position, -transform.up, 1.5f, roadLayerMask);
-        float currentBoostDuration = isInAir ? 0.3f : boostDuration; // 공중에 떠있으면 1초, 아니면 기본 부스터 시간 사용
-
         BoostEffect(true);
 
+        // 오디오 클립을 매번 설정하고 재생하도록 변경
         boostingAudioSource.clip = audioClips[1]; // 배열 2번 클립 (부스터 소리)
         boostingAudioSource.Play(); // 오디오 클립 재생 시작
+
         boostWindAudioSource.clip = audioClips[2];
         boostWindAudioSource.Play();
 
-        // 현재 부스터 유지 시간 대기
-        yield return new WaitForSeconds(currentBoostDuration);
+        // Boost 유지 시간
+        yield return new WaitForSeconds(boostDuration);
 
         // Boost 종료
         isBoosting = false;
@@ -302,27 +293,47 @@ public class PlayerScript : MonoBehaviour
     }
 
 
-    private void Steer()
+    public void Steer(float horizontalInput)
     {
-        // 자이로스코프의 y축 회전값을 사용하여 horizontalInput 계산
-        float horizontalInput = Input.gyro.rotationRateUnbiased.y;
-
         // 현재 속도를 기반으로 한 회전 속도 조절
         float speedFactor = rb.velocity.magnitude / maxSpeed;
         speedFactor = Mathf.Pow(speedFactor, 2);
-        float rotateAmount = horizontalInput * rotateSpeed * 2 * Mathf.Max(speedFactor, 1) * Time.deltaTime;
+        float rotateAmount;
 
-        if (Mathf.Abs(horizontalInput) > 0)
+        if (!isBoosting)
         {
-            transform.Rotate(Vector3.up, rotateAmount, Space.World);
+            rotateAmount = horizontalInput * rotateSpeed * Mathf.Max(speedFactor, 1) * Time.deltaTime;
+
+
+            if (Mathf.Abs(horizontalInput) > 0)
+            {
+                transform.Rotate(Vector3.up, rotateAmount, Space.World);
+            }
+            else
+            {
+                // 드리프트가 끝나면 차량을 원래 y축 기준으로 회전 상태로 복원
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, transform.eulerAngles.y, 0), Time.deltaTime * 5);
+
+                // 여기서도 드리프트가 끝나면 rotateSpeed를 복원
+                rotateSpeed = Mathf.Lerp(rotateSpeed, originalRotateSpeed, Time.deltaTime * 5);
+            }
         }
         else
         {
-            // 드리프트가 끝나면 차량을 원래 y축 기준으로 회전 상태로 복원
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, transform.eulerAngles.y, 0), Time.deltaTime * 5);
+            rotateAmount = horizontalInput * rotateSpeed * Mathf.Max(speedFactor, 1) / 1.5f * Time.deltaTime;
 
-            // 여기서도 드리프트가 끝나면 rotateSpeed를 복원
-            rotateSpeed = Mathf.Lerp(rotateSpeed, originalRotateSpeed, Time.deltaTime * 5);
+            if (Mathf.Abs(horizontalInput) > 0)
+            {
+                transform.Rotate(Vector3.up, rotateAmount, Space.World);
+            }
+            else
+            {
+                // 드리프트가 끝나면 차량을 원래 y축 기준으로 회전 상태로 복원
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, transform.eulerAngles.y, 0), Time.deltaTime * 5);
+
+                // 여기서도 드리프트가 끝나면 rotateSpeed를 복원
+                rotateSpeed = Mathf.Lerp(rotateSpeed, originalRotateSpeed, Time.deltaTime * 5);
+            }            
         }
     }
 
@@ -352,13 +363,16 @@ public class PlayerScript : MonoBehaviour
 
             if (Mathf.Abs(driftDirection) > 0.1f)
             {
-                // 드리프트 중 회전속도 증가
+                // 드리프트 중 회전속도를 증가
                 currentRotationSpeed = Mathf.Lerp(currentRotationSpeed, originalRotateSpeed * 5f, Time.deltaTime * 2);
 
-                // 미끄러짐 효과 추가
-                Vector3 driftForce = transform.right * driftDirection * driftPower;
-                rb.AddForce(driftForce, ForceMode.Force);
-                FillDriftGauge();
+                if (joystick.inputDirection.y > 0)
+                {
+                    // 미끄러짐 효과 추가
+                    Vector3 driftForce = transform.right * driftDirection * driftPower;
+                    rb.AddForce(driftForce, ForceMode.Force);
+                    FillDriftGauge();
+                }
             }
             else
             {
@@ -443,6 +457,19 @@ public class PlayerScript : MonoBehaviour
         StartCoroutine(PreventCollision());
     }
 
+    public void EnforceRespawn()
+    {
+        this.transform.position = new Vector3(lapController.respawnPointPosition.x, lapController.respawnPointPosition.y + 2.0f, lapController.respawnPointPosition.z);
+        this.transform.rotation = lapController.respawnPointRotation;
+
+        // 움직임 멈춤
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+
+        // 충돌 방지 코루틴을 시작
+        StartCoroutine(PreventCollision());
+    }
+
     public IEnumerator PreventCollision()
     {
         // Player 태그를 가진 모든 게임 오브젝트를 탐색
@@ -466,20 +493,6 @@ public class PlayerScript : MonoBehaviour
             {
                 Physics.IgnoreCollision(player.GetComponent<Collider>(), GetComponent<Collider>(), false);
             }
-        }
-    }
-
-    private void Pause()
-    {
-        if (!isPause && Input.GetKey(KeyCode.Space))
-        {
-            Time.timeScale = 0;
-            isPause = true;
-        }
-        else if (isPause && Input.GetKey(KeyCode.Space))
-        {
-            Time.timeScale = 1;
-            isPause = false;
         }
     }
 }

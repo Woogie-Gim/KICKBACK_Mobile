@@ -14,6 +14,7 @@ public class LapController : MonoBehaviour
     public Vector3 respawnPointPosition; // 리스폰 위치
     public Quaternion respawnPointRotation; // 리스폰 Rotation
     public GameObject startPoint; // 시작 지점
+    public TMP_Text warningMsg;
 
     [Header("Laps")]
     public int currentIndex; // 인덱스 체킹
@@ -45,14 +46,33 @@ public class LapController : MonoBehaviour
     // 체크포인트 정보를 갱신하는 메서드
     public void UpdateCheckPoint(int index, Vector3 checkpointPosition, Quaternion checkpointRotation)
     {
-        respawnPointPosition = checkpointPosition;
-        respawnPointRotation = checkpointRotation;
-        currentIndex = index;
+        if (currentIndex == (index - 1))
+        {
+            currentIndex++;
+            respawnPointPosition = checkpointPosition;
+            respawnPointRotation = checkpointRotation;
+        }
+        else if (currentIndex == -1 && index == 1)
+        {
+            currentIndex = 1;
+            respawnPointPosition = checkpointPosition;
+            respawnPointRotation = checkpointRotation;
+        }
+        else if (currentIndex == index)
+        {
+            currentIndex = index;
+            respawnPointPosition = checkpointPosition;
+            respawnPointRotation = checkpointRotation;
+        }
+        else if (currentIndex != (index - 1))
+        {
+            WrongCheck();
+        }
     }
 
     public void UpdateLap()
     {
-        if (SceneManager.GetActiveScene().name == "Cebu Track")
+        if (SceneManager.GetActiveScene().name == "Cebu Track" || SceneManager.GetActiveScene().name == "Boryeong Track")
         {
             if (currentIndex >= checkPointsCnt && currentLap <= 3)
             {
@@ -123,11 +143,43 @@ public class LapController : MonoBehaviour
         }
     }
 
+    private void WrongCheck()
+    {
+        StartCoroutine(Warning());
+        StartCoroutine(ForcedRespawn());
+    }
+
+    private IEnumerator ForcedRespawn()
+    {
+        yield return new WaitForSeconds(2.0f);
+
+        script.EnforceRespawn();
+    }
+
+    private IEnumerator Warning()
+    {
+        float blinkTime = 0.5f; // 깜빡이는 주기
+        float warningDuration = 2.0f; // 경고 메시지가 지속되는 시간
+
+        float endTime = Time.time + warningDuration;
+        while (Time.time < endTime)
+        {
+            Color msgColor = warningMsg.color;
+            msgColor.a = msgColor.a == 1.0f ? 0.0f : 1.0f; // 투명도 전환
+            warningMsg.color = msgColor;
+            yield return new WaitForSeconds(blinkTime);
+        }
+
+        Color finalColor = warningMsg.color;
+        finalColor.a = 0; // 투명도를 0으로 설정하여 메시지를 완전히 숨김
+        warningMsg.color = finalColor;
+    }
+
     public IEnumerator Finish()
     {
         yield return new WaitForSeconds(0.2f);
 
-        if (SceneManager.GetActiveScene().name == "Cebu Track")
+        if (SceneManager.GetActiveScene().name == "Cebu Track" || SceneManager.GetActiveScene().name == "Boryeong Track")
         {
             if (currentIndex >= checkPointsCnt && currentLap > 3)
             {
@@ -253,6 +305,6 @@ public class LapController : MonoBehaviour
                 Result.SetActive(true);
             }
         }
-        //nickName.text = DataManager.Instance.loginUserInfo.dataBody.nickname;
+        nickName.text = DataManager.Instance.loginUserInfo.dataBody.nickname;
     }
 }
